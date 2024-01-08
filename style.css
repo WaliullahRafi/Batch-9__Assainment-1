@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@400;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none; outline: none;
+    transition: .3s linear;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --red-color: #FF0000;
+    --white-color: #fff;
+    --black-color: #070211;
+
+    --paragraph-black-color: #07021199;
+    --paragraph-white-color: #FFFFFFCC;
+}
+
+h1, h2{
+    font-family: 'Merriweather', serif;
+}
+
+p{
+    color: var(--paragraph-black-color);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 50px 140px;
+}
+
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    color: var(--white-color);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background: var(--red-color);
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 2px solid var(--red-color);
+    background: transparent;
+    color: var(--red-color);
+}
+
+
+
+
+/* ============= header design ============ */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 140px;
+}
+
+.header .content{
+    width: 100%;
+    height: 600px;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('assets/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header .content h2{
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.header .content h1{
+    text-align: center;
+    width: 632px;
+    font-size: 72px;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--white-color);
+    margin-top: 16px;
+}
+
+
+
+
+/* ============= catagories design ============ */
+
+.catagories{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.catagories .c-content h2{
+    color: var(--red-color);
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-bottom: 48px;
+}
+
+.catagories .c-content span{
+    color: var(--red-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.catagories .c-content h3{
+    color: var(--black-color);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.catagories .c-img{
+    width: 802.9px;
+    height: 500px;
+    object-fit: contain;
+    margin-top: 48px;
+}
+
+.catagories .c-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* ============= welcome design ============ */
+
+.welcome .container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 68px 126px;
+    gap: 200px;
+    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('assets/Vector.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    margin-top: 120px;
+}
+
+.welcome .container .w-content{
+    max-width: 697px;
+}
+
+.welcome .container .w-content h1{
+    width: 642px;
+    color: var(--white-color);
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
+}
+
+.welcome .container .w-content p{
+    color: var(--paragraph-white-color);
+    margin-top: 24px;
+}
+
+.welcome .container .w-content .btn{
+    margin-top: 48px;
+}
+
+.welcome .container .w-img{
+    width: 319.83px;
+    height: 464.662px;
+    object-fit: contain;
+}
+
+.welcome .container .w-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* ============= time/place/date design ============ */
+
+.time .t-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 482px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    margin-top: 120px;
+}
+
+.time .t-container .t-content h4{
+    color: var(--black-color);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.time .t-container .t-content h4 span{
+    color: var(--red-color);
+}
+
+.time .t-container .t-content .btn{
+    margin-top: 48px;
+}
+
+
+
+
+/* ============= Up-coming design ============ */
+
+.upcoming .up-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.upcoming .up-container .text-part h4{
+    color: var(--red-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.upcoming .up-container .text-part h3{
+    color: var(--black-color);
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 16px;
+}
+
+.upcoming .up-container .text-part p{
+    margin-top: 22px;
+}
+
+.upcoming .up-container .up-img img{
+    border: 32px solid transparent;
+    outline: 16px solid var(--red-color);
+    border-radius: 50%;
+}
+
+.upcoming .up-container .new-year h3{
+    color: var(--red-color);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.upcoming .up-container .new-year p{
+    margin-top: 16px;
+}
+
+.upcoming .up-container .new-year img{
+    margin-top: 43px;
+}
+
+
+
+
+/* ============= Up-coming design ============ */
+
+.holidays .h-content{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.holidays .h-content h4{
+    color: var(--black-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.holidays .h-content h1{
+    color: var(--black-color);
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 900;
+    margin-top: 16px;
+}
+
+.holidays .h-content h1 span{
+    color: var(--red-color);
+}
+
+.holidays .h-content p{
+    color: var(--paragraph-black-color);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 28px;
+}
+
+.holidays .container{
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 662px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.holidays .container hr{
+    height: 229px;
+    width: 100%;
+    background: var(--red-color);
+    position: absolute;
+    bottom: 0;
+    border-radius: 16px 0 16px 16px;
+}
+
+.holidays .container .surprise-box{
+    position: absolute;
+    left: 5%;
+    z-index: 1;
+}
+
+.holidays .container .discount{
+    position: absolute;
+    top: 10%;
+    right: 17%;
+    z-index: 1;
+}
+
+.holidays .container .girl{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+/* ============= portfolio design ============ */
+
+.portfolio .content{
+    margin-top: 120px;
+}
+
+.portfolio .content span{
+    color: var(--red-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.portfolio .content h2{
+    color: var(--black-color);
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 16px;
+}
+
+.portfolio .content p{
+    margin-top: 22px;
+    max-width: 896px;
+}
+
+.portfolio .container{
+    margin-top: 48px;
+}
+
+.portfolio .container .p-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.portfolio .container .p-img img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.portfolio .container .p-img img:hover{
+    transform: scale(1.03);
+}
+
+
+
+
+/* ============= newsletter design ============ */
+
+.newsletter .container{
+    height: 616px;
+    width: 100%;
+    background: #FF00000D;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.newsletter .container .content h3{
+    color: var(--black-color);
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+.newsletter .container .content p{
+    width: 896px;
+    margin-top: 22px;
+}
+
+.newsletter .container .content .form{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.newsletter .container .content .form [type='email'] {
+    width: 648px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 50px 0px 0px 50px;
+    color: rgba(7, 2, 17, 0.30);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.newsletter .container .content .form .btn{
+    width: 210px;
+    height: 72px;
+    border-radius: 0px 50px 50px 0px;
+    background: var(--red-color);
+    color: var(--white-color);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+}
+
+.newsletter .container .content .form .btn:hover{
+    border: 2px solid var(--red-color);
+    background: transparent;
+    color: var(--red-color);
+}
+
+
+
+
+/* ============= footer design ============ */
+
+.footer{
+    width: 100%;
+    height: 609px;
+    background: var(--black-color);
+    padding: 120px 140px;
+    margin-top: 120px;
+}
+
+.footer .container{
+    color: var(--white-color);
+}
+
+.footer .container .part1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .part1 .site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .container .part1 .site img{
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.footer .container .part1 .site a{
+    color: var(--white-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: lowercase;
+}
+
+.footer .container .part1 .site a:hover{
+    text-decoration: underline;
+}
+
+.footer .container .part1 span{
+    color: var(--white-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.footer .container hr{
+    height: 1px;
+    width: 100%;
+    background: #FFFFFF26;
+    margin-top: 50px;
+}
+
+.footer .container .part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.footer .container .part2 img{
+    cursor: pointer;
+    /* border-radius: 50%; */
+}
+
+.footer .container .part2 img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px var(--white-color);
+    border-radius: 50%;
+}
+
+.footer .container .part3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.footer .container .part3 span{
+    color: var(--white-color);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
